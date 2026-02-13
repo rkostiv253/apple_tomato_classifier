@@ -13,6 +13,8 @@ https://colab.research.google.com/drive/13TuSnpIaXYWD_NvWOuwrZUKYWMy24bqa?usp=sh
 - **Backend**: Python, Flask, Tensorflow
 - **Frontend**: HTML, CSS
 
+### Directory Tree
+
 ```
 apple_tomato_classifier/
 │
