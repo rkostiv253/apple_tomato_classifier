@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Apple vs Tomato</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 720px; margin: 40px auto; }
+    .card { padding: 16px; border: 1px solid #ddd; border-radius: 10px; }
+    button { padding: 10px 14px; border-radius: 8px; border: 1px solid #aaa; cursor: pointer; }
+    input[type=file] { padding: 8px; }
+    .muted { color: #666; font-size: 14px; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Upload image → predict Apple (0) or Tomato (1)</h2>
+
+  <div class="card">
+    <form method="POST" action="/predict" enctype="multipart/form-data">
+      <input type="file" name="image" accept="image/*" required>
+      <button type="submit">Predict</button>
+    </form>
+    <div class="muted">The model will resize your image to 224×224 internally.</div>
+  </div>
+</body>
+</html>

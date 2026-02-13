@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Result</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 720px; margin: 40px auto; }
+    .card { padding: 16px; border: 1px solid #ddd; border-radius: 10px; }
+    img { max-width: 260px; border-radius: 10px; border: 1px solid #eee; }
+    a { display: inline-block; margin-top: 14px; }
+  </style>
+</head>
+<body>
+  <h2> APPLE ✅</h2>
+
+  <div class="card">
+    <p><b>Label:</b> 0</p>
+    {% if prob %}
+      <p><b>Probability tomato:</b> {{ prob }}</p>
+      <p><b>Probability apple (approx):</b> {{ (1 - prob|float)|round(4) }}</p>
+    {% endif %}
+    <img src="{{ url_for('static', filename='apple.png') }}" alt="Apple">
+    <br>
+    <a href="{{ url_for('index') }}">← Back to main page</a>
+  </div>
+</body>
+</html>

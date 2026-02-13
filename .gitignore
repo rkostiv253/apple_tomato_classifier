@@ -1,0 +1,43 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# MacOS
+.DS_Store
+
+# VSCode / IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# TensorFlow model checkpoints (if retraining)
+*.ckpt
+*.index
+*.data-*
+
+# Temporary uploads (if you add them later)
+uploads/
+
+# Coverage / testing
+.coverage
+htmlcov/
+
+# Build files
+build/
+dist/
+*.egg-info/
