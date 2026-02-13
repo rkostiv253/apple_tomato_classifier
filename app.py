@@ -1,7 +1,7 @@
 import io
 import numpy as np
 from PIL import Image
-from flask import Flask, request, render_template_string, jsonify, render_template, redirect, url_for
+from flask import Flask, request, render_template, redirect, url_for
 import tensorflow as tf
 
 MODEL_PATH = "apple_tomato_classifier.keras"
